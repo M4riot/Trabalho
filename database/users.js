@@ -1,7 +1,7 @@
 const prisma = require('./prisma');
 
 const createUser = (users) => {
-    return prisma.users.createMany({
+    return prisma.users.create({
         data: {
             name: users.name,
             email: users.email,
